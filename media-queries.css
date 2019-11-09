@@ -1,8 +1,5 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* .hero h3 {
-    font-size: 2em;
-  } */
   ::placeholder {
     font-size: 1em;
   }
@@ -10,16 +7,7 @@
 
 /*  Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* .hero h3 {
-    font-size: 2em;
-  } */
   ::placeholder {
     font-size: 1.3em;
   }
-  /* .hero-text {
-    width: 50% !important;
-  }
-  .hero-image {
-    width: 50% !important;
-  } */
 }
