@@ -11,3 +11,9 @@
     font-size: 1.3em;
   }
 }
+
+@media (min-width: 992px) {
+  .header {
+    padding: 1em 6em;
+  }
+}
