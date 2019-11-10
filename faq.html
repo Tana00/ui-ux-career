@@ -31,6 +31,7 @@
           4Designers
         </a>
         <button
+          onclick="heroClassToggle()"
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -78,7 +79,7 @@
       </div>
     </div>
 
-    <div class="container-fluid py-5 content">
+    <div id="hero" class="container-fluid py-5 content">
       <div class="container pb-xl-5 pb-lg-3">
         <div class="row py-xl-4">
           <div class="col-lg-6 text-center mb-lg-0 mb-5">
@@ -309,15 +310,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function toggleIcon(e) {
-        $(e.target)
-          .prev(".panel-heading")
-          .find(".more-less")
-          .toggleClass("fa-sort-up fa-sort-down");
-      }
-      $(".panel-group").on("hidden.bs.collapse", toggleIcon);
-      $(".panel-group").on("shown.bs.collapse", toggleIcon);
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -40,12 +40,15 @@
   .section1 .-card {
     padding: 4em 1em;
   }
+  .hero-text h3 {
+    font-size: 2.5em;
+  }
 }
 
 /*  Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .toggle-hero {
-    margin-top: 190px !important;
+    margin-top: 180px !important;
   }
 }
 
