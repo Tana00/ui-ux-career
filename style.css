@@ -22,9 +22,9 @@ p {
 /* HEADER */
 .header {
   padding: 1em 2em 1em 0;
-  -webkit-box-shadow: 0.33333rem 0 1.33333rem rgba(87, 87, 87, 0.1);
-  -moz-box-shadow: 0.33333rem 0 1.33333rem rgba(87, 87, 87, 0.1);
-  box-shadow: 0.33333rem 0 1.33333rem rgba(87, 87, 87, 0.1);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #0c1a7a;
 }
 .navbar {
@@ -33,11 +33,7 @@ p {
 .navbar-brand {
   color: #f8f9fa;
 }
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-  }
-}
+
 .header ul li {
   margin: 0px;
   float: left;
@@ -50,7 +46,7 @@ p {
   font-weight: 400;
 }
 nav ul li a:hover {
-  color: #05b993;
+  color: #a9b4ff !important;
 }
 .navbar .menu {
   border: 1px solid #fff;
@@ -65,10 +61,10 @@ nav ul li a:hover {
   height: auto;
   cursor: pointer;
 }
-.navbar button:active:focus,
+.navbar button:active,
+.navbar button:focus,
 .navbar span:active:focus {
   color: #fff;
-  background: #000 !important;
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
@@ -78,6 +74,7 @@ nav ul li a:hover {
   background-color: #fff;
   margin-bottom: 0;
   padding: 4vw 0;
+  margin-top: 6em;
   z-index: 0;
 }
 .hero-text {
@@ -169,18 +166,6 @@ nav ul li a:hover {
   font-size: 16px;
   list-style: inside;
 }
-/* .small-btn {
-  width: 11rem;
-}
-.small-btn .btn {
-  background-color: rgb(232, 91, 70);
-  width: 100%;
-  color: rgb(255, 255, 255) !important;
-  font-size: 0.9rem !important;
-  border-radius: 20px;
-  border: 1px solid rgb(232, 91, 70);
-  padding: 0.3rem 1rem;
-} */
 .big-btn {
   width: 13rem;
 }
@@ -409,7 +394,7 @@ nav ul li a:hover {
   margin: 0 auto;
   font-size: 16px;
 }
-form.subscribe input[type="email"] {
+.subscribe-field input[type="email"] {
   font-size: 16px;
   background: #fff;
   border: none;
@@ -426,8 +411,7 @@ form.subscribe input[type="email"] {
   font-size: 15px;
   padding: 27px 20px;
 }
-
-form.subscribe button {
+.subscribe-btn {
   background: #0c1a7a;
   letter-spacing: 1px;
   color: #fff;
@@ -444,6 +428,23 @@ form.subscribe button {
   -moz-box-shadow: 0px 11px 42px 1px rgba(58, 52, 82, 0.1);
   box-shadow: 0px 11px 42px 1px rgba(58, 52, 82, 0.1);
 }
+.section5 .footer-links {
+  margin-top: 10em;
+  text-align: center;
+}
+.section5 .footer-links ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section5 .footer-links ul li {
+  display: inline-block;
+  color: #666;
+  font-size: 13px;
+}
+.section5 .footer-links ul li a {
+  text-decoration: none;
+  color: #0c1a7a;
+}
 
 /* ABOUT US PAGE */
 #about-us,
@@ -459,21 +460,25 @@ form.subscribe button {
 }
 li.breadcrumb-item a,
 li.breadcrumb-item {
-  color: #000;
+  color: #fff;
   letter-spacing: 1px;
   font-size: 14px;
 }
 .breadcrumb-item.active {
-  color: #000;
+  color: #a9b4ff;
+}
+li.breadcrumb-item a:hover {
+  text-decoration: none;
 }
 .display-section {
-  background-color: #e6f5f0;
+  background-color: #0c1a7a;
+  margin-top: 4vw;
 }
 .navbar .active .nav-link {
-  color: #05b993 !important;
+  color: #a9b4ff !important;
 }
 .content h6 {
-  color: rgb(5, 185, 147);
+  color: 0c1a7a;
   letter-spacing: 2px;
   margin-bottom: 8px;
   font-size: 15px;
@@ -482,9 +487,10 @@ li.breadcrumb-item {
   font-size: 34px;
   line-height: 1.4;
   font-weight: 600;
+  color: #0c1a7a;
 }
 .content p {
-  color: #05b993;
+  color: #0c1a7a;
 }
 .read-more {
   padding: 14px 26px;
@@ -497,9 +503,106 @@ li.breadcrumb-item {
   -ms-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #05b993;
+  background-color: #0c1a7a;
+}
+.read-more:hover {
+  color: #0c1a7a;
+  background: #fff;
+  border: 2px solid #0c1a7a;
 }
 
 /* FAQ PAGE */
+.container .panel-default {
+  margin-bottom: 1.5em;
+  border: 1px solid white;
+  padding: 0 10px;
+}
+.container .panel-collapse {
+  max-height: 1000px;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 2em;
+}
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  background-color: #f3f3f3;
+}
+.panel h4 {
+  font-size: 18px;
+  color: #666;
+}
+.panel-body h6 {
+  color: #0c1a7a;
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.panel-title > a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  color: #111;
+  padding: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+}
+.panel-body p {
+  color: #111;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+}
+.more-less {
+  float: right;
+  color: #111;
+}
 
 /* CONTACT PAGE */
+.contact .contact-title h2 {
+  color: #0c1a7a;
+  font-size: 40px;
+}
+.contact-form .form-control {
+  background: #f8f9fa;
+  padding: 12px 10px;
+  border: 1px solid #dedede;
+  border-left: 5px solid #0c1a7a;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  color: #0c1a7a;
+}
+.contact-form textarea {
+  height: 180px;
+  resize: none;
+}
+button.contact-btn {
+  background: #0c1a7a;
+  color: #ffffff;
+  padding: 11px 25px;
+  letter-spacing: 1px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  font-size: 16px;
+  max-width: 140px;
+}
+button.contact-btn:hover {
+  color: #0c1a7a;
+  background: #fff;
+  border: 2px solid #0c1a7a;
+}

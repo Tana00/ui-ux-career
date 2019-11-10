@@ -13,11 +13,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body id="faq">
     <!-- HEADER SECTION -->
-    <div class="container-fluid wrapper">
-      <nav class="navbar navbar-expand-lg header">
+    <div class="container-fluid header fixed-top">
+      <!-- <div class=""> -->
+      <nav class="navbar navbar-expand-lg container">
         <a class="navbar-brand mr-auto" href="#">
           <img
             src="/docs/4.0/assets/brand/bootstrap-solid.svg"
@@ -50,7 +52,7 @@
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="faq.html"
-                >FAQs<span class="sr-only">(current)</span></a
+                >FAQ's<span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
@@ -59,18 +61,20 @@
           </ul>
         </div>
       </nav>
-      <!-- HERO SECTION -->
-      <div class="jumbotron jumbotron-fluid display-section">
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html" class="font-weight-bold">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                FAQ's
-              </li>
-            </ol>
-          </nav>
-        </div>
+    </div>
+    <!-- HERO SECTION -->
+    <div class="jumbotron jumbotron-fluid display-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="font-weight-bold">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              FAQ's
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
 
@@ -79,7 +83,7 @@
         <div class="row py-xl-4">
           <div class="col-lg-6 text-center mb-lg-0 mb-5">
             <img
-              src="https://devcareer.io/images/d.png"
+              src="images/undraw_conversation_h12g.svg"
               alt=""
               class="img-fluid"
             />
@@ -98,52 +102,153 @@
             >
           </div>
         </div>
-        <!-- accordions -->
-        <div id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item
-                </button>
-              </h5>
-            </div>
-        
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
+      </div>
+    </div>
+
+    <!-- accordions -->
+    <div class="container pb-xl-5 pb-lg-3">
+      <div
+        class="panel-group"
+        id="accordion"
+        role="tablist"
+        aria-multiselectable="true"
+      >
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a
+                role="button"
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <i class="fas fa-sort-up more-less"></i>
+                Who we are
+              </a>
+            </h4>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Collapsible Group Item
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
+          <div
+            id="collapseOne"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="headingOne"
+          >
+            <div class="panel-body">
+              <h6>From Africans to Africans</h6>
+              <p>
+                We are Designer Avocados in Africa, trying to bridge the gap
+                between the diversity of Designers here and over there.
+              </p>
             </div>
           </div>
         </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                role="button"
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <i class="fas fa-sort-up more-less"></i>
+                Is this limited to only Designers?
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseTwo"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="headingTwo"
+          >
+            <div class="panel-body">
+              <h6>The tech Ecosystem is large</h6>
+              <p>
+                The emerging tech Ecosystem is large an really supportive, as
+                much as we would love to also go into Designers, we are limited
+                to focusing on software designers for now.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                role="button"
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <i class="fas fa-sort-up more-less"></i>
+                How do you pick your Candidates to sponsor?
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseThree"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="headingThree"
+          >
+            <div class="panel-body">
+              <h6>
+                How we pick our 20 budding Designers for #Laptops4Designers
+              </h6>
+              <p>
+                Although all our selections start with a one tweet pitch, we
+                take this forward with an online assessment, followed by a phone
+                interview and lastly, a physical interview.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a
+                class="collapsed"
+                role="button"
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <i class="fas fa-sort-up more-less"></i>
+                Why our selection process so stressful?
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseFour"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="headingFour"
+          >
+            <div class="panel-body">
+              <h6>It has to be</h6>
+              <p>
+                The purpose of a long selection process is to make sure as much
+                as we can; the resources we provide are effectively utilized for
+                this correct reason and in the right way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER SECTION -->
     <div class="jumbotron jumbotron-fluid text-center section5">
@@ -166,14 +271,25 @@
                 name="email"
                 required=""
               />
-              <button class="btn form-control w-50" type="submit">
+              <button class="btn form-control w-50 subscribe-btn" type="submit">
                 I'm in
               </button>
             </div>
           </form>
         </div>
+
+        <div class="footer-links">
+          <hr />
+          <ul>
+            <li>Copyright &#9400; 2019 4Designers Inc</li>
+            <li>
+              Follow Us on <a href="#" class="font-weight-bold">Twitter</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <script
       src="https://kit.fontawesome.com/2534cfc66b.js"
       crossorigin="anonymous"
@@ -193,5 +309,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggleIcon(e) {
+        $(e.target)
+          .prev(".panel-heading")
+          .find(".more-less")
+          .toggleClass("fa-sort-up fa-sort-down");
+      }
+      $(".panel-group").on("hidden.bs.collapse", toggleIcon);
+      $(".panel-group").on("shown.bs.collapse", toggleIcon);
+    </script>
   </body>
 </html>

@@ -18,49 +18,50 @@
   </head>
   <body>
     <!-- HEADER SECTION -->
-    <div class="container-fluid header">
+    <div class="container-fluid header fixed-top">
       <!-- <div class=""> -->
-        <nav class="navbar navbar-expand-lg container">
-          <a class="navbar-brand mr-auto" href="#">
-            <img
-              src="/docs/4.0/assets/brand/bootstrap-solid.svg"
-              width="30"
-              height="30"
-              class="d-inline-block align-top img-fluid"
-              alt=""
-            />
-            4Designers
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon menu">Menu</span>
-          </button>
+      <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand mr-auto" href="#">
+          <img
+            src="/docs/4.0/assets/brand/bootstrap-solid.svg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top img-fluid"
+            alt=""
+          />
+          4Designers
+        </a>
+        <button
+          onclick="heroClassToggle()"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon menu">Menu</span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ's</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- </div> -->
     <!-- HERO SECTION -->
-    <div class="container-fluid hero-section">
+    <div id="hero" class="container-fluid hero-section">
       <div class="container hero">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-5 hero-text">
@@ -78,7 +79,7 @@
           <div class="col-sm-12 col-md-6 col-lg-7 hero-image">
             <img
               class="img-fluid"
-              src="undraw_interaction_design_odgc.svg"
+              src="images/undraw_interaction_design_odgc.svg"
               alt=""
             />
           </div>
@@ -91,7 +92,11 @@
         <div class="row">
           <div class="col-sm-12 col-md-4">
             <div class="-card">
-              <img class="img-fluid img1" src="conversation.svg" alt="" />
+              <img
+                class="img-fluid img1"
+                src="images/conversation.svg"
+                alt=""
+              />
               <h4 class="my-4">Have The Passion?</h4>
               <p>
                 Are you trying to get a foothold in tech? Are you having
@@ -103,7 +108,7 @@
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4 my-lg-0 my-5">
             <div class="-card">
-              <img class="img-fluid img2" src="stopwatch.svg" alt="" />
+              <img class="img-fluid img2" src="images/stopwatch.svg" alt="" />
               <h4 class="my-4">Have The Time?</h4>
               <p>
                 Our program is full time and lasts 3 months, you're welcome to
@@ -115,7 +120,7 @@
           </div>
           <div class="col-sm-12 col-md-4">
             <div class="-card">
-              <img class="img-fluid img3" src="network.svg" alt="" />
+              <img class="img-fluid img3" src="images/network.svg" alt="" />
               <h4 class="my-4">Join Us</h4>
               <p>
                 We are a non-profit tech organization that's dedicated to
@@ -156,7 +161,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 image4">
-            <img src="undraw_Designer_by46.svg" alt="" />
+            <img src="images/undraw_Designer_by46.svg" alt="" />
           </div>
         </div>
       </div>
@@ -213,7 +218,7 @@
       <div class="container py-xl-5 py-lg-3">
         <div class="row">
           <div class="col-sm-12 col-md-5 image4">
-            <img src="undraw_thought_process_67my.svg" alt="" />
+            <img src="images/undraw_thought_process_67my.svg" alt="" />
           </div>
           <div class="col-sm-12 col-md-7 pl-lg-4 mt-lg-2 mt-4">
             <h3 class="text-bl mb-3 font-weight-bold">
@@ -262,7 +267,7 @@
 
     <!-- FOOTER SECTION -->
     <div class="jumbotron jumbotron-fluid text-center section5">
-      <div class="container py-xl-5 py-lg-3">
+      <div class="container pt-xl-5 pt-lg-3">
         <div class="newsletter mx-auto">
           <div class="icon4">
             <span class="fa fa-envelope"></span>
@@ -281,11 +286,21 @@
                 name="email"
                 required=""
               />
-              <button class="btn form-control w-50" type="submit">
+              <button class="btn form-control w-50 subscribe-btn" type="submit">
                 I'm in
               </button>
             </div>
           </form>
+        </div>
+
+        <div class="footer-links">
+          <hr />
+          <ul>
+            <li>Copyright &#9400; 2019 4Designers Inc</li>
+            <li>
+              Follow Us on <a href="#" class="font-weight-bold">Twitter</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -309,5 +324,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>

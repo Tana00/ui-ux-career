@@ -13,11 +13,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body id="about-us">
     <!-- HEADER SECTION -->
-    <div class="container-fluid wrapper">
-      <nav class="navbar navbar-expand-lg header">
+    <div class="container-fluid header fixed-top">
+      <!-- <div class=""> -->
+      <nav class="navbar navbar-expand-lg container">
         <a class="navbar-brand mr-auto" href="#">
           <img
             src="/docs/4.0/assets/brand/bootstrap-solid.svg"
@@ -51,7 +53,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQs</a>
+              <a class="nav-link" href="faq.html">FAQ's</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
@@ -59,24 +61,24 @@
           </ul>
         </div>
       </nav>
-      <!-- HERO SECTION -->
-      <div class="jumbotron jumbotron-fluid display-section">
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="index.html" class="font-weight-bold">Home</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                About Us
-              </li>
-            </ol>
-          </nav>
-        </div>
+    </div>
+    <!-- HERO SECTION -->
+    <div class="jumbotron jumbotron-fluid display-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="font-weight-bold">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              About Us
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
 
-    <div class="container-fluid py-5 content">
+    <div class="container-fluid py-3 content">
       <div class="container pb-xl-5 pb-lg-3">
         <div class="row py-xl-4">
           <div class="col-lg-5 pr-5">
@@ -92,11 +94,13 @@
               adequate resources to dive into Tech. DevCareer is focused on
               supporting these group of people.
             </p>
-            <a href="about.html" class="btn read-more mt-sm-5 mt-4">Read More</a>
+            <a href="about.html" class="btn read-more mt-sm-5 mt-4"
+              >Read More</a
+            >
           </div>
           <div class="col-lg-7 text-center mt-lg-0 mt-5">
             <img
-              src="https://devcareer.io/images/c.png"
+              src="images/undraw_team_page_pgpr.svg"
               alt=""
               class="img-fluid"
             />
@@ -126,11 +130,21 @@
                 name="email"
                 required=""
               />
-              <button class="btn form-control w-50" type="submit">
+              <button class="btn form-control w-50 subscribe-btn" type="submit">
                 I'm in
               </button>
             </div>
           </form>
+        </div>
+
+        <div class="footer-links">
+          <hr />
+          <ul>
+            <li>Copyright &#9400; 2019 4Designers Inc</li>
+            <li>
+              Follow Us on <a href="#" class="font-weight-bold">Twitter</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
