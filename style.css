@@ -18,7 +18,9 @@ p {
   line-height: 1.9;
   color: #51585f;
 }
-
+a:hover {
+  text-decoration: none;
+}
 /* HEADER */
 .header {
   padding: 1em 2em 1em 0;
@@ -95,7 +97,7 @@ nav ul li a:hover {
   max-width: 800px;
   margin: 20px 0;
 }
-.hero button {
+/* .hero button {
   padding: 17px 50px;
   border: none;
   color: #fff;
@@ -107,6 +109,111 @@ nav ul li a:hover {
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #0c1a7a;
+} */
+
+/* WAVE BUTTON */
+.wave-btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 70px;
+  border: 2px solid #0c1a7a;
+  border-radius: 10px;
+  /* text-transform: uppercase; */
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0c1a7a;
+  text-decoration: none;
+  overflow: hidden;
+}
+.wave-btn #span {
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+.wave-btn:hover #span {
+  color: #fff;
+}
+.wave-btn .wave {
+  position: absolute;
+  top: calc(100% + 22px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00aeff;
+  transition: 1s;
+}
+.wave-btn:hover {
+  border: 2px solid #00aeff;
+}
+.wave-btn:hover .wave {
+  top: 0;
+}
+.wave-btn .wave:before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url("images/wave.png");
+  animation: animate 0.5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+    background-position-y: -22px;
+  }
+  100% {
+    background-position-x: 118px;
+    background-position-y: -22px;
+  }
+}
+
+/* SWINGING IMAGE */
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.swing img {
+  border: 5px solid #f8f8f8;
+  display: block;
+}
+.swing:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  top: -10px;
+  left: 50%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+/* nail */
+.swing:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: -14px;
+  left: 51%;
+  z-index: 5;
+  border-radius: 50% 50%;
+  background: #000;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
 }
 
 /* SECTION ONE */
@@ -180,6 +287,12 @@ nav ul li a:hover {
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #0c1a7a;
+}
+.big-btn .btn:hover {
+  color: #0c1a7a;
+  background: #fff;
+  border: 2px solid #0c1a7a;
+  transition: 0.5s;
 }
 .image4 img {
   width: 100%;
@@ -286,6 +399,7 @@ nav ul li a:hover {
 }
 .sm-card:hover .icons i {
   background: linear-gradient(90deg, #434c86, #0c1a7a);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
