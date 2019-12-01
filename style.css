@@ -97,19 +97,6 @@ nav ul li a:hover {
   max-width: 800px;
   margin: 20px 0;
 }
-/* .hero button {
-  padding: 17px 50px;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 1px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #0c1a7a;
-} */
 
 /* WAVE BUTTON */
 .wave-btn {
@@ -213,6 +200,55 @@ nav ul li a:hover {
   100% {
     transform: rotate(-3deg);
   }
+}
+
+/* TIMER SECTION */
+.timer-section {
+  background: #0c1a7a;
+  margin: 5em auto;
+  padding-top: 20px;
+}
+/* #timer {
+  max-width: 740px;
+} */
+.timer-section h2 {
+  text-align: center;
+  color: white;
+}
+.div {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.span {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+
+#days {
+  font-size: 100px;
+  color: #db4844;
+  display: block;
+}
+#hours {
+  font-size: 100px;
+  color: #f07c22;
+  display: block;
+}
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+  display: block;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* SECTION ONE */
