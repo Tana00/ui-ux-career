@@ -1,0 +1,152 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .navbar-nav {
+    padding: 0 1.4em;
+  }
+  form .subscribe-field {
+    display: block;
+  }
+  form.subscribe-field input[type="email"] {
+    font-size: 13px;
+    padding: 13px 11px;
+  }
+  ::placeholder {
+    font-size: 0.8em;
+  }
+  .section5 {
+    padding: 4rem 15px 0;
+    margin-bottom: 0;
+  }
+  .section5 .footer-links {
+    margin-top: 5em;
+  }
+  .section5 .footer-links ul {
+    padding-left: 0;
+  }
+  .newsletter h2 {
+    font-size: 28px;
+  }
+  .newsletter p,
+  .panel h4,
+  .panel p {
+    font-size: 13px;
+  }
+  .panel h6 {
+    font-size: 16px;
+  }
+  .toggle-hero {
+    margin-top: 190px !important;
+  }
+  .section1 .-card {
+    padding: 4em 1em;
+  }
+  .hero-text h3 {
+    font-size: 2.5em;
+  }
+  .sm-card {
+    height: 370px;
+  }
+  .sm-card .text {
+    opacity: 1;
+  }
+  /* TIMER SECTION */
+  .timer-section {
+    margin: 5em auto;
+    padding-top: 20px;
+  }
+  .timer-section h2 {
+    text-align: center;
+    color: white;
+  }
+  .div {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1;
+    padding: 20px 10px;
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+  .span {
+    display: block;
+    font-size: 15px;
+    color: white;
+  }
+
+  #days {
+    font-size: 60px;
+    color: #db4844;
+    display: block;
+  }
+  #hours {
+    font-size: 60px;
+    color: #f07c22;
+    display: block;
+  }
+  #minutes {
+    font-size: 60px;
+    color: #f6da74;
+    display: block;
+  }
+  #seconds {
+    font-size: 40px;
+    color: #abcd58;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 375px) {
+  .timer-section h2 {
+    font-size: 25px;
+  }
+  .div {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1;
+    padding: 20px 10px;
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+  .span {
+    display: block;
+    font-size: 12px;
+    color: white;
+  }
+
+  #days {
+    font-size: 40px;
+    color: #db4844;
+    display: block;
+  }
+  #hours {
+    font-size: 40px;
+    color: #f07c22;
+    display: block;
+  }
+  #minutes {
+    font-size: 40px;
+    color: #f6da74;
+    display: block;
+  }
+  #seconds {
+    font-size: 20px;
+    color: #abcd58;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .toggle-hero {
+    margin-top: 180px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+/* 
+@media (min-width: 992px) .mt-lg-0, .my-lg-0 {
+ 
+} */

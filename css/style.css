@@ -222,13 +222,11 @@ nav ul li a:hover {
   padding: 20px;
   font-size: 40px;
 }
-
 .span {
   display: block;
   font-size: 20px;
   color: white;
 }
-
 #days {
   font-size: 100px;
   color: #db4844;
